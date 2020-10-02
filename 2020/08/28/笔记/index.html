@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
-    board |
+    随手笔记 |
     
     山海</title>
   
@@ -36,7 +36,7 @@
 <main class="content">
 
   <section class="outer">
-  <article id="page-" class="article article-type-page" itemscope itemprop="blogPost" data-scroll-reveal>
+  <article id="spring-笔记" class="article article-type-spring" itemscope itemprop="blogPost" data-scroll-reveal>
 
     <div class="article-inner">
         
@@ -44,7 +44,7 @@
                 
   
     <h1 class="article-title" itemprop="name">
-      board
+      随手笔记
     </h1>
   
   
@@ -56,8 +56,23 @@
             
 
                 
+                    <div class="article-meta">
+                        <a href="/2020/08/28/%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-08-28T09:06:17.000Z" itemprop="datePublished">2020-08-28</time>
+</a>
+                            
+                    </div>
+                    
 
                         
+                            
+    <div class="tocbot"></div>
+
+
+
+
+
+                                
 
                                     <div class="article-entry" itemprop="articleBody">
                                         
@@ -66,11 +81,23 @@
                                             
 
                                                 
-                                                                    
+                                                                    <h4 id="1-耦合"><a href="#1-耦合" class="headerlink" title="1.耦合"></a>1.耦合</h4><hr>
+<p>两个有关联的就叫做<code>耦合</code>。</p>
+<h4 id="2-框架的侵入性和低侵入性"><a href="#2-框架的侵入性和低侵入性" class="headerlink" title="2.框架的侵入性和低侵入性"></a>2.框架的侵入性和低侵入性</h4><hr>
+<p> 侵入是在两个系统发生<code>耦合</code>的时候造成的，所谓<code>侵入性</code>就是指的这个框架设计出来的部件对系统的影响范围，比如开发一个系统要使用第三方框架，如果使用的这个框架需要继承或者实现框架里面的类和接口,就说这个框架具有<code>侵入性</code>。反之则说那个框架具有<code>“低侵入性”</code>。例如：</p>
+<p>使用<code>struts2</code>的时候，需要继承一些<code>struts2</code>的类，才能使用—–<code>struts2</code>框架具有<code>侵入性</code>  。</p>
+<p>使用<code>spring</code>，不需要继承<code>spring</code>特定的类，通过配置完成依赖注入后就可以使用—–<code>低侵入性</code>。</p>
+<p>使用<code>mybatis</code>，不需要集成<code>mybatis</code>特定的类，甚至可以和其他<code>ORM</code>组件共存，然后就可以使用—–<code>低侵入性</code></p>
+<h6 id="侵入式的优缺点："><a href="#侵入式的优缺点：" class="headerlink" title="侵入式的优缺点："></a>侵入式的优缺点：</h6><p>1.侵入式可以使用户跟框架更好的结合，更容易更充分的利用框架提供的功能。</p>
+<p>2.框架外代码就不能使用了，不利于代码复用。</p>
+<h6 id="非侵入式的优缺点："><a href="#非侵入式的优缺点：" class="headerlink" title="非侵入式的优缺点："></a>非侵入式的优缺点：</h6><p>非侵入式也体现了代码的设计原则：<strong>高内聚，低耦合</strong></p>
+<p>1.代码可复用，方便移植。非侵入式的代码则没有过多的依赖，可以很方便的迁移到其他地方。</p>
+<p>2.但是与用户代码互动的方式可能就比较复杂。</p>
+
                                                                         
                                     </div>
                                     <footer class="article-footer">
-                                        <a data-url="http://yoursite.com/board/index.html" data-id="cke9m6wbw000020nih11udpm9" class="article-share-link">
+                                        <a data-url="http://yoursite.com/2020/08/28/%E7%AC%94%E8%AE%B0/" data-id="ckfs0fj810001twni4wbf5oxw" class="article-share-link">
                                             Share
                                         </a>
                                         
@@ -80,10 +107,40 @@
 
     
         
+  <nav class="article-nav">
+    
+    
+      <a href="/2020/08/27/SpringBoot%E7%AC%94%E8%AE%B0/" class="article-nav-link">
+        <strong class="article-nav-caption">Older</strong>
+        <div class="article-nav-title">SpringBoot笔记</div>
+      </a>
+    
+  </nav>
+
 
             
 
                 
+                    
+    <div class="vcomments" id="vcomments"></div>
+    
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+
+        <script>
+            new Valine({
+                el: '#vcomments',
+                appId: 'cIvfrSiEKu6xyORWv006nBlM-gzGzoHsz',
+                appKey: 'kGUhuwrqH4kfcH5RjJBObe5K',
+                notify: 'true',
+                verify: 'true',
+                avatar: 'mp',
+                pageSize: '10',
+                placeholder: '请输入...'
+            })
+        </script>
+        
+                        
+                            
 
 </article>
 </section>
@@ -93,6 +150,8 @@
       <ul class="list-inline">
   
     <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+    <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
   
 </ul>
     </div>
@@ -217,6 +276,23 @@
 
 
 
+
+  
+<script src="/js/tocbot.min.js"></script>
+
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5, h6',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
 
 

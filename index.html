@@ -27,8 +27,7 @@
 
 <body>
  
-   
-<link rel="stylesheet" href="/dist/APlayer.min.css">
+   <link rel="stylesheet" href="/dist/APlayer.min.css">
 <script src="/dist/APlayer.min.js"></script>
 <div id="aplayer" class="aplayer" data-id="459792285" data-server="netease"
   data-type="playlist" data-fixed="true" data-listfolded="true" data-order="random" data-theme="#F58EA8"></div>
@@ -69,6 +68,73 @@
       
       <h1 class="page-type-title"></h1>
       
+        
+          <article id="spring-笔记" class="article article-type-spring" itemscope itemprop="blogPost" data-scroll-reveal>
+
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2020/08/28/%E7%AC%94%E8%AE%B0/">随手笔记</a>
+    </h2>
+  
+  
+
+
+
+
+            </header>
+            
+
+                
+                    <div class="article-meta">
+                        <a href="/2020/08/28/%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-08-28T09:06:17.000Z" itemprop="datePublished">2020-08-28</time>
+</a>
+                            
+                    </div>
+                    
+
+                        
+
+                                    <div class="article-entry" itemprop="articleBody">
+                                        
+
+
+                                            
+
+                                                
+                                                                    <h4 id="1-耦合"><a href="#1-耦合" class="headerlink" title="1.耦合"></a>1.耦合</h4><hr>
+<p>两个有关联的就叫做<code>耦合</code>。</p>
+<h4 id="2-框架的侵入性和低侵入性"><a href="#2-框架的侵入性和低侵入性" class="headerlink" title="2.框架的侵入性和低侵入性"></a>2.框架的侵入性和低侵入性</h4><hr>
+<p> 侵入是在两个系统发生<code>耦合</code>的时候造成的，所谓<code>侵入性</code>就是指的这个框架设计出来的部件对系统的影响范围，比如开发一个系统要使用第三方框架，如果使用的这个框架需要继承或者实现框架里面的类和接口,就说这个框架具有<code>侵入性</code>。反之则说那个框架具有<code>“低侵入性”</code>。例如：</p>
+<p>使用<code>struts2</code>的时候，需要继承一些<code>struts2</code>的类，才能使用—–<code>struts2</code>框架具有<code>侵入性</code>  。</p>
+<p>使用<code>spring</code>，不需要继承<code>spring</code>特定的类，通过配置完成依赖注入后就可以使用—–<code>低侵入性</code>。</p>
+<p>使用<code>mybatis</code>，不需要集成<code>mybatis</code>特定的类，甚至可以和其他<code>ORM</code>组件共存，然后就可以使用—–<code>低侵入性</code></p>
+<h6 id="侵入式的优缺点："><a href="#侵入式的优缺点：" class="headerlink" title="侵入式的优缺点："></a>侵入式的优缺点：</h6><p>1.侵入式可以使用户跟框架更好的结合，更容易更充分的利用框架提供的功能。</p>
+<p>2.框架外代码就不能使用了，不利于代码复用。</p>
+<h6 id="非侵入式的优缺点："><a href="#非侵入式的优缺点：" class="headerlink" title="非侵入式的优缺点："></a>非侵入式的优缺点：</h6><p>非侵入式也体现了代码的设计原则：<strong>高内聚，低耦合</strong></p>
+<p>1.代码可复用，方便移植。非侵入式的代码则没有过多的依赖，可以很方便的迁移到其他地方。</p>
+<p>2.但是与用户代码互动的方式可能就比较复杂。</p>
+
+                                                                        
+                                    </div>
+                                    <footer class="article-footer">
+                                        <a data-url="http://yoursite.com/2020/08/28/%E7%AC%94%E8%AE%B0/" data-id="ckfs0fj810001twni4wbf5oxw" class="article-share-link">
+                                            Share
+                                        </a>
+                                        
+                                    </footer>
+
+    </div>
+
+    
+
+                
+
+</article>
         
           <article id="post-SpringBoot笔记" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
@@ -134,29 +200,15 @@
 
 </article>
         
-          <article id="post-01-JAVA面试题" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+          <article id="post-JAVA面试题" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
     <div class="article-inner">
         
-            <header class="article-header">
-                
-  
-    <h2 itemprop="name">
-      <a class="article-title" href="/2020/08/25/01-JAVA%E9%9D%A2%E8%AF%95%E9%A2%98/">01-JAVA面试题</a>
-    </h2>
-  
-  
-
-
-
-
-            </header>
-            
 
                 
                     <div class="article-meta">
-                        <a href="/2020/08/25/01-JAVA%E9%9D%A2%E8%AF%95%E9%A2%98/" class="article-date">
-  <time datetime="2020-08-25T13:42:19.000Z" itemprop="datePublished">2020-08-25</time>
+                        <a href="/2020/08/25/JAVA%E9%9D%A2%E8%AF%95%E9%A2%98/" class="article-date">
+  <time datetime="2020-08-25T13:38:04.750Z" itemprop="datePublished">2020-08-25</time>
 </a>
                             
                     </div>
@@ -171,16 +223,27 @@
                                             
 
                                                 
-                                                    <h3 id="1-请你谈谈Java中是如何支持正则表达式操作的？"><a href="#1-请你谈谈Java中是如何支持正则表达式操作的？" class="headerlink" title="1.请你谈谈Java中是如何支持正则表达式操作的？"></a>1.请你谈谈Java中是如何支持正则表达式操作的？</h3><p>Java中的String类提供了支持正则表达式操作的方法，包括：<code>matches()</code>、<code>replaceAll()</code>、<code>replaceFirst()</code>、<code>split()</code>。</p>
-                                                        
-                                                            <a class="article-more-link" href="/2020/08/25/01-JAVA%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                                                                查看更多
-                                                            </a>
-                                                            
-                                                                
+                                                                    <p><strong>1. JDK 和 JRE 有什么区别？</strong></p>
+<p>答：</p>
+<ul>
+<li>JDK：Java Development Kit 的简称，java 开发工具包，提供了 java 的开发环境和运行环境</li>
+<li>JRE：Java Runtime Environment 的简称，java 运行环境，为 java 的运行提供了所需环境</li>
+</ul>
+<p>具体来说 ：JDK 其实包含了 JRE，同时还包含了编译 java 源码的编译器 javac，还包含了很多 java 程序调试和分析的工具。</p>
+<p>简单来说 ：如果你需要运行 java 程序，只需安装 JRE 就可以了，如果你需要编写 java 程序，需要安装 JDK。</p>
+<p><strong>2、== 和 equals 的区别是什么？</strong></p>
+<p>答：</p>
+<ul>
+<li>equals对于比较对象来说比较的是引用</li>
+<li>==对于基本类型比较的是值，对于引用类型比较的是引用</li>
+<li>equals对于String、Integer比较的是值，原因是重写了equals方法</li>
+</ul>
+<p><strong>2、</strong></p>
+
+                                                                        
                                     </div>
                                     <footer class="article-footer">
-                                        <a data-url="http://yoursite.com/2020/08/25/01-JAVA%E9%9D%A2%E8%AF%95%E9%A2%98/" data-id="ckea038su0000c4nihrf118rg" class="article-share-link">
+                                        <a data-url="http://yoursite.com/2020/08/25/JAVA%E9%9D%A2%E8%AF%95%E9%A2%98/" data-id="ckfs0fj7g0000twni8j637yj7" class="article-share-link">
                                             Share
                                         </a>
                                         
