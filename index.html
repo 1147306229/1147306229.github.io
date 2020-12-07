@@ -161,7 +161,87 @@
                                             
 
                                                 
-                                                                    
+                                                                    <ul>
+<li><h2 id="截取字符串"><a href="#截取字符串" class="headerlink" title="截取字符串"></a>截取字符串</h2><p>1.使用indexOf获得索引，如果要截取之后的内容还要再加1<br>2.使用substring（索引值），即可截取某字符串后面的所有内容</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="传值"><a href="#传值" class="headerlink" title="传值"></a>传值</h2></li>
+</ul>
+<p>  1.前后端互传的类型必须一致<br>  2.如果前台传递的是一个对象，控制层使用（@RequestBody 对象 对象名来接收）<br>  另外，前台使用JSON.stringify（）传递 ，contentType: “appliction/json”</p>
+<p>  3.注意：如果变量倾斜的话说明是js变量<br>      1.首先，先定义var th = this;<br>      2.th.vue的变量</p>
+<p>  4.如@click=”showList=false”</p>
+<ul>
+<li><h2 id="测试时间"><a href="#测试时间" class="headerlink" title="测试时间"></a>测试时间</h2><p>long start = System.currentTimeMillis();//这个写在最开始的地方<br>long end = System.currentTimeMillis();//写在最后<br>System.out.println(Double(end-start)/1000);</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="获取前年月"><a href="#获取前年月" class="headerlink" title="获取前年月"></a>获取前年月</h2><p> Calendar cal = Calendar.getInstance();<br>int year = cal.get(Calendar.YEAR);<br>int month = cal.get(Calendar.MONTH) + 1;</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="shiro拦截器"><a href="#shiro拦截器" class="headerlink" title="shiro拦截器"></a>shiro拦截器</h2><p>拦截器名        说明</p>
+<p>anon              匿名拦截器，即不需要登录即可访问；</p>
+<pre><code>                    一般用于静态资源过滤；示例“/static/
+                    **=anon”</code></pre>
+</li>
+</ul>
+<ul>
+<li><h2 id="单选框和多选框"><a href="#单选框和多选框" class="headerlink" title="单选框和多选框"></a>单选框和多选框</h2><p>1.都是要带name，各自对应一个name，如果有多个题目则不同，value也不同<br>2.想要拿到值，可以使用@change或者click事件</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="shiro"><a href="#shiro" class="headerlink" title="shiro"></a>shiro</h2><p>1.shiro的核心API<br>Subject：用户主体（把操作交给SecurityManager）<br>SecurityManager：安全管理器（关联Realm）<br>Realm：shiro连接数据的桥梁</p>
+<p>2.依赖<dependency><br><groupId>org.apache.shiro</groupId><br><artifactId>shiro-spring</artifactId><br><version>1.4.0</version></dependency></p>
+
+
+<p>3.属性salt：加盐<br>source：密码<br>AlgorithmName：加密算法名称<br>hashIterations：加密算法次数</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="thymeleaf"><a href="#thymeleaf" class="headerlink" title="thymeleaf"></a>thymeleaf</h2><p>1.thymeleaf3.0以前对页面标签语法比较严格，开始标签必须有对应的标签</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="idea快捷键"><a href="#idea快捷键" class="headerlink" title="idea快捷键"></a>idea快捷键</h2><p>1.局部变量变成员变量快捷键：ctrl+alt+f<br>2.ctrl+h 查找实现类<br>3.ctrl+alt+o 清除错误的包<br>4.shift+shift查找项目中所有的东西</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="springboot热部署"><a href="#springboot热部署" class="headerlink" title="springboot热部署"></a>springboot热部署</h2><p>1.首先在idea的File-settings里找到Compiler把Build<br>project automatically（自动编译）打上勾。</p>
+<p>2.但只打开自动编译，运行时时不生效的。所以要按 ctrl+shift+alt+/<br>选择registry，找到下图选项(compiler.automake.all….)并打上勾<br>才能在运行时自动编译。</p>
+<p>3.在pom.xml文件中添devtools依赖。<br>devtools实现对class文件变化的监听，以及页面的热部署。</p>
+<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>2.2.2.RELEASE</version>
+        </dependency>
+4.在application.properties配置文件关闭缓存，使页面能够实时刷新
+#关闭缓存功能
+spring.thymeleaf.cache=false
+
+
+
+</li>
+</ul>
+<ul>
+<li><h2 id="ajax"><a href="#ajax" class="headerlink" title="ajax"></a>ajax</h2><p> 使用ajax时如果只是传递单个字段可以使用async: false,<br> 如果把这个选项设置成false，这意味着所有的请求都不再是异步的了<br> 如果后台用的是对象接收是接收不到的</p>
+<p> 注意：要拿ajax里面的值在ajax方法里拿</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="QueryWrapper"><a href="#QueryWrapper" class="headerlink" title="QueryWrapper"></a>QueryWrapper</h2><p> 1.在实现类中的queryPage方法中多个条件构造器，也就是<br> IPage<SysRoleEntity> page = this.page(<br> new Query<ScoreEntity>().getPage(params),<br> new QueryWrapper<ScoreEntity>()<br> .eq(“这是要查询数据的数据库的主键字段”,id);</ScoreEntity></ScoreEntity></SysRoleEntity></p>
+<p> 或者这样写，写在for循环中<br> QueryWrapper<ScoreEntity> queryWrapper=new QueryWrapper();<br> queryWrapper.eq(“user_id”, scoreEntity.getUsId());<br> );</ScoreEntity></p>
+<p> getById和getOne<br> 使用getOne里面的值需填写queryWrapper，而getById填写对象点属性</p>
+</li>
+<li><h2 id="underfined"><a href="#underfined" class="headerlink" title="underfined"></a>underfined</h2><p> 1.Cannot read property ‘id’ of undefined类似于这种js点不出，数组越界问题</p>
+<p> 2.没有定义这个属性</p>
+</li>
+</ul>
+<ul>
+<li><h2 id="v-mode对象绑定"><a href="#v-mode对象绑定" class="headerlink" title="v-mode对象绑定"></a>v-mode对象绑定</h2><p> 1.在js中声明一个变量如list{},然后在html页面只需在input上面用<br> v-model=’list.属性名”，这个属性名必须是对象中存在的，这样的话<br> 在插入方法就可以实现的很简单了</p>
+</li>
+</ul>
+
                                                                         
                                     </div>
                                     <footer class="article-footer">
